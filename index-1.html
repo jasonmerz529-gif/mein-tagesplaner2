@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mein Tagesplaner – Plane deinen Tag</title>
+<meta name="description" content="Mein Tagesplaner – Termine, Aufgaben und Lernziele einfach organisieren.">
+<style>
+:root{--bg:#070b16;--panel:#0f1628;--text:#f7f9ff;--muted:#aab4ca;--line:#202b43;--accent:#6d8cff;--accent2:#8d6cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.nav{position:sticky;top:0;z-index:5;background:rgba(7,11,22,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{max-width:1150px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;font-size:19px}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+.hero{max-width:1150px;margin:auto;padding:90px 22px 70px;display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.badge{display:inline-block;border:1px solid #2d3a59;background:#10192e;border-radius:999px;padding:7px 12px;color:#cbd5ff;font-size:13px}
+h1{font-size:clamp(43px,6vw,72px);line-height:1.02;margin:18px 0}.grad{background:linear-gradient(90deg,#fff,#8ea3ff);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:19px;color:var(--muted);max-width:620px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{padding:14px 19px;border-radius:12px;font-weight:750;border:1px solid var(--line);display:inline-block}.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:0}.secondary{background:#10182b}
+.mock{background:linear-gradient(145deg,#101a30,#0b1020);border:1px solid #263452;border-radius:28px;padding:18px;box-shadow:0 25px 70px rgba(0,0,0,.35)}.screen{background:#f7f9ff;color:#172033;border-radius:19px;padding:20px}.screenhead{display:flex;justify-content:space-between;font-weight:800}.task{background:white;border:1px solid #e5e8ef;border-radius:13px;padding:13px;margin-top:10px}.time{color:#64708a;font-size:12px}.done{color:#3157d5;font-weight:700}
+.section{max-width:1150px;margin:auto;padding:70px 22px}.center{text-align:center}.eyebrow{color:#8ea3ff;font-weight:750;font-size:13px;text-transform:uppercase;letter-spacing:.12em}h2{font-size:36px;margin:8px 0 10px}.sub{color:var(--muted);max-width:650px;margin:0 auto 32px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:23px}.ico{font-size:28px}.card h3{margin:12px 0 5px}.card p{color:var(--muted);margin:0;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{border-top:1px solid var(--line);padding-top:18px}.num{font-size:13px;color:#8ea3ff;font-weight:800}
+.download{border:1px solid #30416a;background:linear-gradient(135deg,#111c37,#15112c);border-radius:24px;padding:40px;text-align:center}.download p{color:var(--muted)}.note{font-size:12px;color:#78849e;margin-top:14px}
+footer{border-top:1px solid var(--line);padding:30px 22px;color:#7f8ba3}.footin{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:850px){.hero{grid-template-columns:1fr;padding-top:60px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.navlinks{display:none}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}h2{font-size:30px}.hero{padding-top:45px}.download{padding:28px 20px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin"><a class="brand" href="#">📅 Mein Tagesplaner</a><div class="navlinks"><a href="#funktionen">Funktionen</a><a href="#so-funktionierts">So funktioniert's</a><a href="#download">Download</a></div><a class="btn primary" href="#download">App ansehen</a></div></nav>
+
+<header class="hero">
+<div>
+<span class="badge">✨ Dein persönlicher Tagesplaner</span>
+<h1>Mehr Überblick.<br><span class="grad">Weniger vergessen.</span></h1>
+<p class="lead">Plane Termine, Aufgaben und Lernziele an einem Ort. Du entscheidest selbst, was an welchem Tag und zu welcher Uhrzeit erledigt werden soll.</p>
+<div class="actions"><a class="btn primary" href="#download">📱 Android-App</a><a class="btn secondary" href="#funktionen">Funktionen entdecken</a></div>
+</div>
+<div class="mock" aria-label="Vorschau der Planer-App"><div class="screen"><div class="screenhead"><span>Heute</span><span>📅</span></div><div class="task"><div class="time">09:00 · Schule</div><strong>Mathe lernen</strong></div><div class="task"><div class="time">16:30 · Aufgabe</div><strong>Zimmer aufräumen</strong><div class="done">✓ Erinnerung aktiv</div></div><div class="task"><div class="time">19:00 · Freizeit</div><strong>Gaming</strong></div></div></div>
+</header>
+
+<section id="funktionen" class="section">
+<div class="center"><div class="eyebrow">Funktionen</div><h2>Alles, was dein Tag braucht.</h2><p class="sub">Einfach gehalten, aber flexibel genug für deinen persönlichen Alltag.</p></div>
+<div class="grid">
+<div class="card"><div class="ico">🗓️</div><h3>Freie Planung</h3><p>Wähle selbst Datum, Wochentag, Uhrzeit und Titel deiner Einträge.</p></div>
+<div class="card"><div class="ico">⏰</div><h3>Erinnerungen</h3><p>Plane, wann du an eine Aufgabe oder einen Termin erinnert werden möchtest.</p></div>
+<div class="card"><div class="ico">✅</div><h3>Aufgaben</h3><p>Behalte offene Aufgaben im Blick und markiere sie nach Erledigung.</p></div>
+<div class="card"><div class="ico">🧮</div><h3>Lernmodus</h3><p>Optional kann eine Matheaufgabe erscheinen, bevor eine Aufgabe abgeschlossen wird.</p></div>
+</div>
+</section>
+
+<section id="so-funktionierts" class="section">
+<div class="center"><div class="eyebrow">So funktioniert's</div><h2>In wenigen Schritten organisiert.</h2></div>
+<div class="steps">
+<div class="step"><div class="num">01 — EINTRAG ERSTELLEN</div><h3>Aufgabe hinzufügen</h3><p class="sub" style="margin:0">Titel, Datum und Uhrzeit festlegen.</p></div>
+<div class="step"><div class="num">02 — OPTIONEN</div><h3>Erinnerung wählen</h3><p class="sub" style="margin:0">Entscheide selbst, ob eine Erinnerung benötigt wird.</p></div>
+<div class="step"><div class="num">03 — ERLEDIGT</div><h3>Fortschritt sehen</h3><p class="sub" style="margin:0">Aufgabe abhaken oder optional eine Lernaufgabe lösen.</p></div>
+</div>
+</section>
+
+<section id="download" class="section">
+<div class="download"><div class="eyebrow">Android</div><h2>Mein Tagesplaner kommt auf dein Handy.</h2><p>Die Android-App befindet sich aktuell in der Entwicklungsphase. Sobald die fertige APK bzw. der Play-Store-Eintrag bereitsteht, wird dieser Download hier verknüpft.</p><a class="btn primary" href="#" onclick="alert('Der Download wird aktiviert, sobald die veröffentlichte Android-Version bereitsteht.');return false">📥 Download bald verfügbar</a><div class="note">Aktuelle Entwicklungsversion · Version 1.0</div></div>
+</section>
+
+<footer><div class="footin"><span>© 2026 Mein Tagesplaner</span><span>Ein persönliches Planungsprojekt</span></div></footer>
+</body>
+</html>
